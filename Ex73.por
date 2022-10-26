@@ -1,0 +1,31 @@
+/*
+Crie um programa que preencha automaticamente (usando lógica, não apenas
+atribuindo diretamente) um vetor numérico com 10 posições, conforme abaixo:
+09 08 07 06 05 04 03 02 01 00
+0  1  2  3  4  5  6  7  8  9
+*/
+programa
+{
+	inclua biblioteca Util -->u
+	funcao inicio()
+	{
+	inteiro vet[10]
+	para(inteiro pos = 0; pos < u.numero_elementos(vet); pos ++){
+		vet[pos] = u.sorteia(0, 9)
+		escreva(pos,"=[",vet[pos],"] ")
+		}
+	}
+}
+
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 399; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
